@@ -131,13 +131,9 @@ header .logo img {
 }
 
 .estatisticas-item span {
-  font-size: 2.0625em;
   font-weight: bold;
 }
 
-.estatisticas-item p {
-  font-size: 1.25em;
-}
 /* --------------------------------------------------- */
 
 /* Breakpoints Máximos
@@ -267,6 +263,24 @@ header .logo img {
 
   .estatisticas-item:not(:last-of-type) {
     border-right: 0.0625rem solid #ccc;
+  }
+
+  .estatisticas-item span {
+    font-size: 1.7em;
+  }
+  
+  .estatisticas-item p {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .estatisticas-item span {
+    font-size: 2.0625em;
+  }
+  
+  .estatisticas-item p {
+    font-size: 1.25em;
   }
 }
 /* --------------------------------------------------- */
