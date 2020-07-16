@@ -34,17 +34,34 @@ a:hover {
 }
 /* --------------------------------------------------- */
 
-/* Header
------------------------------------------------------- */
-header {
-  display: none;
-}
-
 /* Section1
 ------------------------------------------------------ */
 .section1 {
   float: left;
   width: 100%;
+}
+/* --------------------------------------------------- */
+
+/* Content
+------------------------------------------------------ */
+.content {
+  width: 90%;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+/* --------------------------------------------------- */
+
+/* Header
+------------------------------------------------------ */
+header {
+  width: 100%;
+  padding-top: 1.875rem;
+  position: fixed;
+  z-index: 5;
+}
+
+header .logo img {
+  max-width: 120px;
 }
 /* --------------------------------------------------- */
 
@@ -126,12 +143,71 @@ header {
 /* Breakpoints Máximos
 ------------------------------------------------------ */
 @media (max-width: 767.9px) {
+  /* menu */
+  .nav-toggle {
+    color: #fff;
+    font-size: 1.25em;
+  }
+  
+  .nav-close {
+    font-size: 1.25rem;
+  }
+
+  .nav-close:hover {
+    color: #f9014d;
+  }
+
+  header nav.active {
+    right: 0;
+  }
+
+  header nav {
+    background: #fff;
+    width: 15.625rem;
+    height: 100%;
+    padding: 0.9375rem;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 10;
+    transition: right 0.7s ease-in-out;
+  }
+
+  header nav ul {
+    padding: 0;
+  }
+
+  header nav ul li {
+    border-bottom: 0.0625rem solid #ccc;
+    font-size: 1.25rem;
+    padding: 0.9375rem 0.3125rem;
+  }
+
+  header nav ul li a:hover {
+    color: #f9014d;
+  }
+
+  header .logo img {
+    max-width: 70px;
+  }
+
+  /* search */
+  .search-box h1 {
+    font-size: 1.8em;
+    padding-top: 2.5rem;
+  }
+
+  .search-box .tagline {
+    font-size: 1.2em;
+  }
+
+  /* estatisticas */
   .estatisticas {
     flex-direction: column;
   }
 
   .estatisticas-item {
-    margin-bottom: 0.9375rem;
+    padding: 0.9375rem;
   }
 
   /* :not(:last-of-type) estamos pedindo pro css aplicar os atributos menos no último elemento */
@@ -139,16 +215,45 @@ header {
     border-bottom: 0.0625rem solid #ccc;
     min-width: 85%;
   }
+
+  .estatisticas-item span {
+    font-size: 1.8em;
+  }
+  
+  .estatisticas-item p {
+    font-size: 1em;
+  }
 }
 /* --------------------------------------------------- */
 
 /* Breakpoints Minímos
 ------------------------------------------------------ */
 @media (min-width: 768px) {
+  /* menu */
+  .nav-toggle, .nav-close {
+    display: none;
+  }
+
+  header nav {
+    float: right;
+    margin-top: 1.25rem;
+  }
+
+  header nav ul li {
+    display: inline-block;
+    margin-left: 1.25rem;
+  }
+
+  header nav ul li a {
+    color: #fff;
+  }
+
+  /* search */
   .search-box {
     padding: 12.5rem 0;
   }
 
+  /* estatisticas */
   .estatisticas {
     margin-top: -4.0625rem;
   }
@@ -166,3 +271,12 @@ header {
 }
 /* --------------------------------------------------- */
 
+/* Auxiliares
+------------------------------------------------------ */
+.text-center{text-align: center;}
+.text-left{text-align: left;}
+.text-right{text-align: right;}
+
+.fl-left{float: left;}
+.fl-right{float: right;}
+/* --------------------------------------------------- */
