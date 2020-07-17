@@ -39,7 +39,7 @@ img {
   max-width: 100%;
 }
 
-.section1, .section2 {
+.section1, .section2, .section3 {
   float: left;
   width: 100%;
 }
@@ -68,7 +68,6 @@ img {
 .row {
   float: left;
   width: 100%;
-  margin-bottom: 6.25rem;
 }
 
 .loadmore {
@@ -79,6 +78,7 @@ img {
   cursor: pointer;
   font-size: 1.1em;
   padding: 0.625rem;
+  margin-top: 1rem;
 }
 
 .loadmore:hover {
@@ -273,6 +273,49 @@ header.fixed .logo img {
   margin-bottom: 2%;
 }
 
+/* Parallax
+------------------------------------------------------ */
+.parallax {
+  background-image: url(../images/bg-paralax.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+  font-size: 1.5em;
+  float: left;
+  text-align: center;
+  width: 100%;
+  padding: 10rem 0;
+  margin: 3.75rem 0;
+}
+
+.parallax h1 {
+  margin-bottom: 0.625rem;
+}
+
+.parallax button {
+  background: #f9014d;
+  border-radius: 0.3125rem;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 0.625rem 1rem;
+  margin-top: 2rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.parallax button:hover {
+  background: #2E3959;
+  color: #fff;
+}
+
+/* Destaques
+------------------------------------------------------ */
+.destaques-col {
+  margin-bottom: 1.25rem;
+}
+
 /* Breakpoints Máximos
 ------------------------------------------------------ */
 @media (max-width: 767.9px) {
@@ -280,6 +323,7 @@ header.fixed .logo img {
   .nav-toggle {
     color: #fff;
     font-size: 1.25em;
+    padding-top: 1.5rem;
   }
   
   .nav-close {
@@ -288,6 +332,10 @@ header.fixed .logo img {
 
   .nav-close:hover {
     color: #f9014d;
+  }
+
+  header {
+    padding-top: 1rem;
   }
 
   header nav.active {
@@ -326,12 +374,12 @@ header.fixed .logo img {
 
   /* search */
   .search-box h1 {
-    font-size: 1.8em;
+    font-size: 1.6em;
     padding-top: 2.5rem;
   }
 
   .search-box .tagline {
-    font-size: 1.2em;
+    font-size: 1em;
   }
 
   /* estatisticas */
@@ -355,6 +403,30 @@ header.fixed .logo img {
   
   .estatisticas-item p {
     font-size: 1em;
+  }
+
+  /* destinos */
+  .section2-titulo h1 {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  .section2-titulo p {
+    font-size: 0.7em;
+  }
+
+  .box .box-cover img {
+    width: 360px;
+    height: 360px;
+  }
+
+  /* parallax */
+  .parallax h1 {
+    font-size: 1.4em;
+  }
+
+  .parallax p {
+    font-size: 0.8em;
   }
 }
 
@@ -425,6 +497,23 @@ header.fixed .logo img {
   .destinos-col:first-child {
     width: 100%;
   }
+
+  /* parallax */
+  .parallax h1 {
+    font-size: 1.6em;
+  }
+
+  /* destaques */
+  .destaques-col {
+    float: left;
+    width: 49%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+  }
+
+  .destaques-col:nth-of-type(2n+0) {
+    margin-right: 0;
+  }
 }
 
 @media (min-width: 900px) {
@@ -447,12 +536,18 @@ header.fixed .logo img {
 }
 
 @media (min-width: 1024px) {
+  /* estatística */
   .estatisticas-item span {
     font-size: 2.0625em;
   }
   
   .estatisticas-item p {
     font-size: 1.25em;
+  }
+
+  /* parallax */
+  .parallax h1 {
+    font-size: 2em;
   }
 }
 

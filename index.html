@@ -1,229 +1,331 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <title>Projeto - CSS</title>
-    <link rel="shortcut icon" href="./assets/images/css3.svg" type="image/x-icon">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./assets/css/fontawesome-all.min.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-  </head>
-  <body>
-    <header>
-      <div class="content">
-        <div class="logo fl-left">
-          <a href="#">
-            <img src="./assets/images/manche.png" alt="logo">
-          </a>
-        </div>
+<head>
+  <title>Projeto - CSS</title>
+  <link rel="shortcut icon" href="./assets/images/css3.svg" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <a href="#" class="nav-toggle fl-right">
-          <i class="fas fa-bars" aria-hidden="true"></i> MENU
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./assets/css/fontawesome-all.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+
+<body>
+  <!-- Header e Nav -->
+  <header>
+    <div class="content">
+      <div class="logo fl-left">
+        <a href="#">
+          <img src="./assets/images/manche.png" alt="logo">
         </a>
-
-        <nav>
-          <p class="fl-right">
-            <span class="nav-close"><i class="fas fa-times"></i></span>
-          </p>
-          <ul>
-            <li><a href="#">Barcos e Lanchas</a></li>
-            <li><a href="#">Destaques</a></li>
-            <li><a href="#">Avaliações</a></li>
-          </ul>
-        </nav>
       </div>
-    </header>
-    
-    <section class="section1">
-      <div class="search-box">
-        <div>
-          <h1>Viaje ao Mundo pelos Mares</h1>
-          <p class="tagline">Encontre os melhores barcos e lanchas</p>
-        </div>
-        <form action="#" name="formSearch" method="POST">
-          <input type="search" name="busca" id="busca" placeholder="Pesquisar">
-          <button type="submit"><i class="fas fa-search"></i></button>
-        </form>
+
+      <a href="#" class="nav-toggle fl-right">
+        <i class="fas fa-bars" aria-hidden="true"></i> MENU
+      </a>
+
+      <nav>
+        <p class="fl-right">
+          <span class="nav-close"><i class="fas fa-times"></i></span>
+        </p>
+        <ul>
+          <li><a href="#">Barcos e Lanchas</a></li>
+          <li><a href="#">Destaques</a></li>
+          <li><a href="#">Avaliações</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Search e Estatísticas -->
+  <section class="section1">
+    <div class="search-box">
+      <div>
+        <h1>Viaje ao Mundo pelos Mares</h1>
+        <p class="tagline">Encontre os melhores barcos e lanchas</p>
       </div>
-      <div class="estatisticas">
-        <div class="estatisticas-item">
-          <span>2,500</span>
-          <p>Barcos</p>
-        </div>
-        <div class="estatisticas-item">
-          <span>10,000</span>
-          <p>Lanchas</p>
-        </div>
-        <div class="estatisticas-item">
-          <span>$10.000.000</span>
-          <p>Avaliados</p>
-        </div>
-        <div class="estatisticas-item">
-          <span>15,000</span>
-          <p>Pontos de Aluguéis</p>
-        </div>
+      <form action="#" name="formSearch" method="POST">
+        <input type="search" name="busca" id="busca" placeholder="Pesquisar">
+        <button type="submit"><i class="fas fa-search"></i></button>
+      </form>
+    </div>
+    <div class="estatisticas">
+      <div class="estatisticas-item">
+        <span>2,500</span>
+        <p>Barcos</p>
       </div>
-    </section>
+      <div class="estatisticas-item">
+        <span>10,000</span>
+        <p>Lanchas</p>
+      </div>
+      <div class="estatisticas-item">
+        <span>$10.000.000</span>
+        <p>Avaliados</p>
+      </div>
+      <div class="estatisticas-item">
+        <span>15,000</span>
+        <p>Pontos de Aluguéis</p>
+      </div>
+    </div>
+  </section>
 
-    <section class="section2">
-      <div class="content">
-        <div class="section-header">
-          <h1>Escolha seu destino preferido</h1>
-          <p>Os melhores lugares do mundo em uma única plataforma</p>
+  <!-- Box Destinos -->
+  <section class="section2">
+    <div class="content">
+      <div class="section-header section2-titulo">
+        <h1>Escolha seu destino preferido</h1>
+        <p>Os melhores lugares do mundo em uma única plataforma</p>
+      </div>
+
+      <div class="row">
+
+        <div class="destinos-col">
+          <div class="box">
+            <div class="box-name">
+              Barcos
+            </div>
+            <div class="box-cover">
+              <img src="./assets/images/destino-1.jpg" alt="...">
+            </div>
+            <div class="box-detalhes">
+              <div class="box-detalhes-info">
+                <h2>Figueira da Fox</h2>
+                <p>Portugal</p>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="row">
-
-          <div class="destinos-col">
-            <div class="box">
-              <div class="box-name">
-                Barcos
-              </div>
-              <div class="box-cover">
-                <img src="./assets/images/destino-1.jpg" alt="...">
-              </div>
-              <div class="box-detalhes">
-                <div class="box-detalhes-info">
-                  <h2>Figueira da Fox</h2>
-                  <p>Portugal</p>
-                </div>
+        <div class="destinos-col">
+          <div class="box">
+            <div class="box-name">
+              Lanchas
+            </div>
+            <div class="box-cover">
+              <img src="./assets/images/destino-2.jpg" alt="...">
+            </div>
+            <div class="box-detalhes">
+              <div class="box-detalhes-info">
+                <h2>Figueira da Fox</h2>
+                <p>Portugal</p>
               </div>
             </div>
           </div>
-
-          <div class="destinos-col">
-            <div class="box">
-              <div class="box-name">
-                Lanchas
-              </div>
-              <div class="box-cover">
-                <img src="./assets/images/destino-2.jpg" alt="...">
-              </div>
-              <div class="box-detalhes">
-                <div class="box-detalhes-info">
-                  <h2>Figueira da Fox</h2>
-                  <p>Portugal</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="destinos-col">
-            <div class="box">
-              <div class="box-name">
-                Lanchas
-              </div>
-              <div class="box-cover">
-                <img src="./assets/images/destino-3.jpg" alt="...">
-              </div>
-              <div class="box-detalhes">
-                <div class="box-detalhes-info">
-                  <h2>Figueira da Fox</h2>
-                  <p>Portugal</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="destinos-col">
-            <div class="box">
-              <div class="box-name">
-                Casas
-              </div>
-              <div class="box-cover">
-                <img src="./assets/images/destino-4.jpg" alt="...">
-              </div>
-              <div class="box-detalhes">
-                <div class="box-detalhes-info">
-                  <h2>Figueira da Fox</h2>
-                  <p>Portugal</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="destinos-col">
-            <div class="box">
-              <div class="box-name">
-                Prédios
-              </div>
-              <div class="box-cover">
-                <img src="./assets/images/destino-5.jpg" alt="...">
-              </div>
-              <div class="box-detalhes">
-                <div class="box-detalhes-info">
-                  <h2>Figueira da Fox</h2>
-                  <p>Portugal</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="destinos-col">
-            <div class="box">
-              <div class="box-name">
-                Ilhas
-              </div>
-              <div class="box-cover">
-                <img src="./assets/images/destino-6.jpg" alt="...">
-              </div>
-              <div class="box-detalhes">
-                <div class="box-detalhes-info">
-                  <h2>Figueira da Fox</h2>
-                  <p>Portugal</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="destinos-col">
-            <div class="box">
-              <div class="box-name">
-                Barcos
-              </div>
-              <div class="box-cover">
-                <img src="./assets/images/destino-7.jpg" alt="...">
-              </div>
-              <div class="box-detalhes">
-                <div class="box-detalhes-info">
-                  <h2>Figueira da Fox</h2>
-                  <p>Portugal</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="destinos-col">
-            <div class="box">
-              <div class="box-name">
-                Porto
-              </div>
-              <div class="box-cover">
-                <img src="./assets/images/destino-8.jpg" alt="...">
-              </div>
-              <div class="box-detalhes">
-                <div class="box-detalhes-info">
-                  <h2>Figueira da Fox</h2>
-                  <p>Portugal</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
 
-        <div class="row">
-          <div class="content text-center">
-            <button class="loadmore">CARREGAR MAIS</button>
+        <div class="destinos-col">
+          <div class="box">
+            <div class="box-name">
+              Lanchas
+            </div>
+            <div class="box-cover">
+              <img src="./assets/images/destino-3.jpg" alt="...">
+            </div>
+            <div class="box-detalhes">
+              <div class="box-detalhes-info">
+                <h2>Figueira da Fox</h2>
+                <p>Portugal</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="destinos-col">
+          <div class="box">
+            <div class="box-name">
+              Casas
+            </div>
+            <div class="box-cover">
+              <img src="./assets/images/destino-4.jpg" alt="...">
+            </div>
+            <div class="box-detalhes">
+              <div class="box-detalhes-info">
+                <h2>Figueira da Fox</h2>
+                <p>Portugal</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="destinos-col">
+          <div class="box">
+            <div class="box-name">
+              Prédios
+            </div>
+            <div class="box-cover">
+              <img src="./assets/images/destino-5.jpg" alt="...">
+            </div>
+            <div class="box-detalhes">
+              <div class="box-detalhes-info">
+                <h2>Figueira da Fox</h2>
+                <p>Portugal</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="destinos-col">
+          <div class="box">
+            <div class="box-name">
+              Ilhas
+            </div>
+            <div class="box-cover">
+              <img src="./assets/images/destino-6.jpg" alt="...">
+            </div>
+            <div class="box-detalhes">
+              <div class="box-detalhes-info">
+                <h2>Figueira da Fox</h2>
+                <p>Portugal</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="destinos-col">
+          <div class="box">
+            <div class="box-name">
+              Barcos
+            </div>
+            <div class="box-cover">
+              <img src="./assets/images/destino-7.jpg" alt="...">
+            </div>
+            <div class="box-detalhes">
+              <div class="box-detalhes-info">
+                <h2>Figueira da Fox</h2>
+                <p>Portugal</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="destinos-col">
+          <div class="box">
+            <div class="box-name">
+              Porto
+            </div>
+            <div class="box-cover">
+              <img src="./assets/images/destino-8.jpg" alt="...">
+            </div>
+            <div class="box-detalhes">
+              <div class="box-detalhes-info">
+                <h2>Figueira da Fox</h2>
+                <p>Portugal</p>
+              </div>
+            </div>
           </div>
         </div>
 
       </div>
-    </section>
-  
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./assets/js/script.js"></script>
-  </body>
+
+      <div class="row">
+        <div class="content text-center">
+          <button class="loadmore">CARREGAR MAIS</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Parallax -->
+  <div class="parallax">
+    <div class="content">
+      <h1>ENCONTROU O BARCO PREFERIDO?</h1>
+      <p>Bora dar seus próximos passos nessa incrível aventura!</p>
+      <button>SAÍBA MAIS</button>
+    </div>
+  </div>
+
+  <!-- Destaques -->
+  <section class="section3">
+    <div class="content">
+
+      <div class="section-header section2-titulo">
+        <h1>Destaques</h1>
+        <p>Os melhores barcos e lanchas da plataforma!</p>
+      </div>
+
+      <div class="row">
+        <div class="destaques-col">
+          <div class="box">
+            <div class="box-name">
+              Lancha
+            </div>
+            <div class="box-cover">
+              <img src="./assets/images/destaque-1.jpg" alt="...">
+            </div>
+            <div class="box-detalhes">
+              <div class="box-detalhes-info">
+                <h2>Lancha</h2>
+                <p>Navegar em alto mar</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="destaques-col">
+          <div class="box">
+            <div class="box-name">
+              Lancha
+            </div>
+            <div class="box-cover">
+              <img src="./assets/images/destaque-2.jpg" alt="...">
+            </div>
+            <div class="box-detalhes">
+              <div class="box-detalhes-info">
+                <h2>Lancha</h2>
+                <p>Navegar em alto mar</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="destaques-col">
+          <div class="box">
+            <div class="box-name">
+              Lancha
+            </div>
+            <div class="box-cover">
+              <img src="./assets/images/destaque-3.jpg" alt="...">
+            </div>
+            <div class="box-detalhes">
+              <div class="box-detalhes-info">
+                <h2>Lancha</h2>
+                <p>Navegar em alto mar</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="destaques-col">
+          <div class="box">
+            <div class="box-name">
+              Lancha
+            </div>
+            <div class="box-cover">
+              <img src="./assets/images/destaque-4.jpg" alt="...">
+            </div>
+            <div class="box-detalhes">
+              <div class="box-detalhes-info">
+                <h2>Lancha</h2>
+                <p>Navegar em alto mar</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="content text-center">
+        <button class="loadmore">CARREGAR MAIS</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
 </html>

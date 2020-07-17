@@ -8,7 +8,7 @@ $(function () {
 
   // fixar header quando rolar a página
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 100) {
+    if ($(this).scrollTop() > 10) {
       $('header').addClass('fixed');
     } else {
       $('header').removeClass('fixed');
