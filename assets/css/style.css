@@ -39,7 +39,7 @@ img {
   max-width: 100%;
 }
 
-.section1, .section2, .section3 {
+.section1, .section2, .section3, .section4 {
   float: left;
   width: 100%;
 }
@@ -316,6 +316,72 @@ header.fixed .logo img {
   margin-bottom: 1.25rem;
 }
 
+/* Avaliacoes
+------------------------------------------------------ */
+.avaliacoes {
+  background-image: url(../images/bg-testemunhas.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 6.66666667rem 0;
+  margin: 3.75rem 0;
+}
+
+.avaliacoes .content {
+  display: flex;
+  flex-direction: column;
+}
+
+.article-avaliacoes {
+  background: rgba(255, 255, 255, 0.8);
+  border: 2px solid #ccc;
+  border-radius: 0.3125rem;
+  font-size: 0.75em;
+  float: left;
+  padding: 0.9375rem;
+  max-width: 100%;
+}
+
+.article-avaliacoes:last-of-type{
+  margin-right: 0;
+}
+
+.article-avaliacoes .comentario {
+  border-left: 8px solid #ccc;
+  font-size: 1.2em;
+  font-weight: normal;
+  text-align: justify;
+  margin-bottom: 1.25rem;
+  padding-left: 0.75rem;
+}
+
+.article-avaliacoes .image {
+  border-radius: 50%;
+  float: left;
+  overflow: hidden;
+  width: 5rem;
+  height: 5rem;
+  margin-right: 0.625rem;
+}
+
+.article-avaliacoes p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 5rem;
+}
+
+.article-avaliacoes p .name {
+  color: #f9014d;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.article-avaliacoes p .cargo {
+  font-size: 1em;
+  font-weight: bold;
+}
+
 /* Breakpoints Máximos
 ------------------------------------------------------ */
 @media (max-width: 767.9px) {
@@ -417,7 +483,9 @@ header.fixed .logo img {
 
   .box .box-cover img {
     width: 360px;
-    height: 360px;
+    max-width: 360px;
+    height: 300px;
+    max-height: 300px;
   }
 
   /* parallax */
@@ -427,6 +495,11 @@ header.fixed .logo img {
 
   .parallax p {
     font-size: 0.8em;
+  }
+
+  /* avaliacoes */
+  .article-avaliacoes {
+    margin-bottom: 1.25rem;
   }
 }
 
@@ -512,6 +585,23 @@ header.fixed .logo img {
   }
 
   .destaques-col:nth-of-type(2n+0) {
+    margin-right: 0;
+  }
+
+  .avaliacoes .row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  /* avaliacoes */
+  .article-avaliacoes {
+    width: calc((100% - 4%) / 3);
+    margin-right: 2%;
+    margin-bottom: 2%;
+  }
+
+  .article-avaliacoes:last-of-type {
     margin-right: 0;
   }
 }
